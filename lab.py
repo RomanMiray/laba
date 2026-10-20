@@ -10,6 +10,7 @@ def task_1():
             n = int(input("Введите натуральное число: "))
         except ValueError:
             print("Ошибка! Нужно ввести натуральное число!")
+            continue
 
         if n > 0:
             break
@@ -65,28 +66,24 @@ def task_3():
     input("Нажмите любую клавишу чтобы вернуться в главное меню")
     
 
-def main():
-    while True:
-        print("\n=============")
-        print("Главное меню")
-        print("1. Выполнить первое задание")
-        print("2. Выполнить второе задание")
-        print("3. Выполнить третье задание")
-        print("4. Выход")
-        
-        choice = input("Выберите опцию (1-4): ")
-        
-        if choice == '1':
-            task_1()
-        elif choice == '2':
-            task_2()
-        elif choice == '3':
-            task_3()
-        elif choice == '4':
-            print("До свидания!")
-            break
-        else:
-            print("Введите число от 1 до 4.")
-
-if __name__ == "__main__":
-    main()
+while True:
+    print("\n=============")
+    print("Главное меню")
+    print("1. Выполнить первое задание")
+    print("2. Выполнить второе задание")
+    print("3. Выполнить третье задание")
+    print("4. Выход")
+    
+    choice = input("Выберите опцию (1-4): ")
+    
+    if choice == '1':
+        task_1()
+    elif choice == '2':
+        task_2()
+    elif choice == '3':
+        task_3()
+    elif choice == '4':
+        print("До свидания!")
+        break
+    else:
+        print("Введите число от 1 до 4.")
