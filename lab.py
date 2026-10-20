@@ -58,7 +58,7 @@ def task_3():
         Q = Q0 * (e ** (-lam * t))
 
         if Q <= target_Q:
-            print(f"Мощность уменьшится до {target_Q} R/h через {t} days.")
+            print(f"Мощность уменьшится до {target_Q} R/h через {t} дней.")
             break
 
         t += 5
